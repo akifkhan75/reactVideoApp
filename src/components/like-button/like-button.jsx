@@ -1,5 +1,5 @@
 const LikeButton = ({liked, handleLike, handleUnlike}) => (
-    <div className="like-comment-section">
+    <div className="like-section">
         {liked ? (
             <button onClick={handleUnlike}>Unlike</button>
         ) : (

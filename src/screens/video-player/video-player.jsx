@@ -14,24 +14,24 @@ const VideoPage = () => {
     const [newComment, setNewComment] = useState('');
 
     useEffect(() => {
-        //   Fetch video details using Axios with API key
+        //Fetch video details using Axios
         axios.get(`${API_URL}/${id}`)
             .then(response => setVideo(response.data))
             .catch(error => console.error('Error fetching video details:', error));
     }, [id]);
 
     const handleLike = () => {
-        // Update the like status on the server
+        // Update the like status
         setLiked(true)
     };
 
     const handleUnlike = () => {
-        // Update the unlike status on the server
+        // Update the unlike status
         setLiked(false)
     };
 
     const handleAddComment = () => {
-        // Add a new comment on the server
+        // Add a new comment
         setComments([...comments, newComment])
         // Clear the new comment input
         setNewComment('');
@@ -45,7 +45,7 @@ const VideoPage = () => {
         <div className="container">
             <div className="video-details">
                 <h2>{video.name}</h2>
-                <ReactPlayer url={'https://peertube.cpy.re' + video.embedPath} controls width={'100%'} />
+                <ReactPlayer url={'https://peertube.cpy.re'+video.embedPath} controls width={'100%'} />
                 <LikeButton liked={liked} handleLike={handleLike} handleUnlike={handleUnlike} />
                 <div className='description'>
                     <p>{video.description}</p>

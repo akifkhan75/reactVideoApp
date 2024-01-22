@@ -7,12 +7,12 @@ const VideoList = () => {
     const [videos, setVideos] = useState([]);
   
     useEffect(() => {
-      // Fetch list of videos using Axios with API key
+      // Fetch list of videos using Axios
       axios.get(API_URL)
         .then(response => setVideos(response.data.data))
         .catch(error => console.error('Error fetching videos:', error));
     }, []);
-  
+
     return (
       <div className="container">
         <h2>Video List</h2>

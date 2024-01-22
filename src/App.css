@@ -77,13 +77,13 @@ li a {
 }
 
 /* Like and Comment Section Styles */
-.like-comment-section {
+.like-section {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.like-comment-section button {
+.like-section button {
   padding: 10px;
   margin-right: 10px;
   cursor: pointer;
