@@ -7,8 +7,8 @@ This is a simple React video player application with features such as routing, v
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/reactVideoPlayer.git
-   cd react-video-player
+   git clone https://github.com/akifkhan75/reactVideoApp.git
+   cd reactVideoApp
    npm install
    npm start
 
