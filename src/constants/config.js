@@ -1,0 +1,1 @@
+export const API_URL = 'https://peertube.cpy.re/api/v1/videos';
